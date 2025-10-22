@@ -1,0 +1,66 @@
+/* Wrapper to contain both form and error message and center it */
+.add-skill-wrapper {
+  width: 100%;
+  max-width: 550px; /* Increased max-width for better desktop/tablet view */
+  margin: 0 auto 24px auto; 
+}
+
+.add-skill {
+  display: flex;
+  flex-wrap: wrap; /* Allows inputs to wrap on small screens */
+  gap: 15px; /* Increased gap */
+  background: #1F1F1F; 
+  padding: 15px 20px; /* Increased padding */
+  border-radius: 12px; /* Slightly larger border-radius */
+}
+
+/* Increased width and height for inputs */
+.add-skill-input {
+  flex-grow: 1; /* Allows inputs to take up available space */
+  padding: 12px; /* Increased padding */
+  border-radius: 8px; /* Slightly larger border-radius */
+  border: none;
+  min-width: 180px; /* Ensures inputs don't become too small */
+  font-size: 1.05rem; /* Slightly larger font */
+  background: #2D2D2D; 
+  color: #E0E0E0; 
+}
+
+.add-skill-input:focus {
+    outline: 2px solid #00C6FF;
+    background: #333333;
+}
+
+/* Increased size and padding for the button */
+.add-skill button {
+  background-color: #00C6FF;
+  border: none;
+  padding: 12px 25px; /* Increased padding */
+  border-radius: 8px; 
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.05rem; /* Slightly larger font */
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.add-skill button:hover:not(:disabled) {
+  background-color: #00A9DB;
+}
+
+.add-skill button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+    color: #999;
+}
+
+/* Error Message Style */
+.add-skill-error {
+  color: #FF6B6B;
+  background: #331A1A;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
